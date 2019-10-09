@@ -1,0 +1,35 @@
+{
+  "name": "et-app",
+  "version": "0.0.1",
+  "description": "Expense tracker",
+  "main": "docs/index.html",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "npm-run-all --parallel start watch",
+    "start": "serve ./docs",
+    "start2": "lws --http2 --spa./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://wwww.github.com/tonyflow90/et-tracker"
+  },
+  "author": "Keno Bohlen",
+  "license": "MIT",
+  "dependencies": {
+    "lit-html": "^1.1.2",
+    "local-web-server": "^3.0.7",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.23.1",
+    "rollup-plugin-babel-minify": "^9.1.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy-assets": "^2.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-uglify": "^6.0.3",
+    "rollup-plugin-workbox": "^3.0.0",
+    "serve": "^11.2.0",
+    "workbox-cli": "^4.3.1"
+  }
+}
